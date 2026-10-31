@@ -1,0 +1,14 @@
+.gradle/
+build/
+run/
+run-server/
+logs/
+out/
+*.iml
+.idea/
+dist/archive/
+dist/*-dev.jar
+*.log
+test-instance/
+libs/
+.gradle-home/

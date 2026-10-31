@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+modId="modchecker"
+version="1.2.5"
+displayName="Mod Checker Client"
+authors="li"
+displayTest="IGNORE_ALL_VERSION"
+description='''
+Mod Checker 客户端校验组件。
+只生成并发送登录报告，不包含服务端命令、清单生成或白名单管理。
+必须与服务端的完整 Mod Checker 1.2.0 配套使用。
+'''
+
+[[dependencies.modchecker]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.modchecker]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="CLIENT"

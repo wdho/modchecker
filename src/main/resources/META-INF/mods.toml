@@ -1,0 +1,29 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="${mod_authors}"
+displayTest="IGNORE_ALL_VERSION"
+description='''
+协议 2：在 Forge LOGIN 协商完成前检查模组清单、ID 白名单和原有文件报告。
+双端必须同时更新，检查完成前不进入世界。客户端自报不能证明无运行时注入。
+Forge 1.20.1 login admission, protocol 2 on both sides. Reports are not remote attestation.
+'''
+
+[[dependencies.${mod_id}]]
+modId="forge"
+mandatory=true
+versionRange="${forge_version_range}"
+ordering="NONE"
+side="SERVER"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="SERVER"

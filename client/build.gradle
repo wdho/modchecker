@@ -1,0 +1,58 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.0.54'
+}
+
+version = "1.20.1-1.2.5"
+group = 'com.li.modchecker'
+
+base {
+    archivesName = 'modchecker-client'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'info'
+            mods {
+                modchecker {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "net.minecraftforge:forge:1.20.1-47.4.0"
+}
+
+jar {
+    finalizedBy 'reobfJar'
+    manifest {
+        attributes([
+                'Specification-Title'    : 'Mod Checker Client',
+                'Specification-Vendor'   : 'li',
+                'Specification-Version'  : '1',
+                'Implementation-Title'   : project.name,
+                'Implementation-Version' : project.version,
+                'Implementation-Vendor'  : 'li',
+        ])
+    }
+}
