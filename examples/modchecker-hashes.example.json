@@ -1,0 +1,13 @@
+{
+  "format": 1,
+  "generatedAt": "2026-10-24T23:51:07+08:00",
+  "generatedBy": "Admin",
+  "mods": {
+    "expectedmod": {
+      "sha256": "3fd56da673c4ba41ecbedd1c6213d6addfdb25bbbc2dd9801ea70ef1cc8dc365",
+      "size": 2096,
+      "name": "Expected Mod (test only)",
+      "version": "1.0.0"
+    }
+  }
+}

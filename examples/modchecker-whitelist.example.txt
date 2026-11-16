@@ -1,0 +1,6 @@
+# Mod Checker whitelist
+# One exact lowercase mod id per line. Display names and quoted names are rejected.
+# Extra client mods listed here may join even if they are not in the server manifest.
+# Examples:
+jei
+xaerominimap

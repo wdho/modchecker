@@ -1,0 +1,23 @@
+# Gradle / Forge development
+.gradle/
+build/
+run/
+run-server/
+logs/
+.idea/
+*.iml
+
+# Local test evidence and raw server/client logs (privacy)
+test/evidence/
+test/security/results/
+
+# Temporary production/stability test directories
+.prod-test*/
+.stability-server*/
+.final-server*/
+.lan-test-server*/
+.host-test-server*/
+.cmd-test-server*/
+.tab-test-server*/
+*.log
+hs_err_pid*

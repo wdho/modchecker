@@ -1,0 +1,33 @@
+{
+  "format": 1,
+  "generatedAt": "2026-10-24T23:27:05+08:00",
+  "generatedBy": "Admin",
+  "mods": [
+    {
+      "id": "expectedmod",
+      "version": "*",
+      "side": "client"
+    },
+    {
+      "id": "forge",
+      "version": "47.4.0",
+      "side": "both"
+    },
+    {
+      "id": "minecraft",
+      "version": "1.20.1",
+      "side": "both"
+    },
+    {
+      "id": "modchecker",
+      "version": "1.0.0",
+      "side": "server"
+    }
+  ],
+  "channelVersions": {
+    "expectedmod:main": "1.0",
+    "fml:handshake": "FML3",
+    "fml:play": "FML3",
+    "forge:split": "1.1"
+  }
+}
